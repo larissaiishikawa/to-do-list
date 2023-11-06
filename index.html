@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>To-do List</h2>
+        <input type="text" id="tarefa" placeholder="Informe a tarefa" onkeydown="adicionarComEnter(event)">
+        <span onclick="addElemento()" class="addBtn">Adicionar</span>
+        <button onclick="limparLista()" class="limparBtn">Limpar Lista</button>
+    </div>
+    <ul id="itemLista">
+        <li class="checked">6/11/2023 - Finalizar Atividade prática com JavaScript - Alteração da lista de tarefas</li>
+        <li class="checked">6/11/2023 - Enviar no Moodle</li>
+        <li class="checked">6/11/2023 - Publicar no GitHub</li>
+        <li>?/11/2023 - Teste da Profª Marquezone :)</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
